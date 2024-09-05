@@ -13,7 +13,7 @@ function MenuManager() {
                 <div  className="icon-menu">
                     <MenuIcon size={"100%"}></MenuIcon>
                 </div>
-                <a href="/Curriculo-Ryan.pdf">
+                <a download href="/Curriculo-Ryan.pdf">
                 <button className="btn-yellow-full">
                     Baixar CV <Download size={"1.1rem"}></Download>
                 </button></a>
