@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
+
+.menu-global {
+    font-family: "Lusitana", serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    height: 14vh;
+    max-height: 120px;
+    width: 100%;
+    background-color: #151515;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.logo {
+    width: 110px;
+    padding: 20px;
+}
+
+.icon-menu {
+    padding: 15px;
+    color: white;
+    width: 50px;
+}
+
+.menu-btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+
+
+.btn-yellow-full {
+    display: flex;
+    gap: 8px;
+    background-color: transparent;
+    border: 1px solid #F5B81C;
+    color: #F5B81C;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+.btn-yellow-full:hover {
+    cursor: pointer;
+}
