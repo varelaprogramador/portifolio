@@ -6,6 +6,7 @@ import React from 'react';
 
 
 
+
 function MenuManager() {
     return (
         <header className="menu-global">
@@ -13,7 +14,7 @@ function MenuManager() {
                 <div  className="icon-menu">
                     <MenuIcon size={"100%"}></MenuIcon>
                 </div>
-                <a download href="/static/Curriculo-Ryan.pdf">
+                <a download href="/curriculo.pdf">
 
                 <button className="btn-yellow-full">
                     Baixar CV <Download size={"1.1rem"}></Download>
