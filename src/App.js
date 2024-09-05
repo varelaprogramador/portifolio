@@ -1,10 +1,12 @@
 
 import { ArrowRight, MoveRight } from "lucide-react";
 import arrow from "./assets/arrow.svg";
+
 import fotoPerfil from "./assets/foto-main-Ryan.svg"
 import divisionImage from "./assets/division-RV.svg";
 import TagItem from "./components/Tag/TagItem";
 import TagData from "./Data/TagData";
+import Redes from "./components/redes-sociais/redes";
 
 
 
@@ -86,14 +88,12 @@ function App() {
 
       </section>
       <section data-aos="fade" className="container-4">
-        <h2 data-aos="fade-up" className="titulo-padrao">Algo interessante em sua mente?<br></br>
+        <h2 data-aos="fade-up" className="titulo-call">Algo interessante em sua mente?<br></br>
         Vamos falar sobre seu projeto!</h2>
         <p data-aos="fade-up" className="paragrafo">Marque uma reunião no botão abaixo</p>
         <a  href="https://api.whatsapp.com/send?phone=+5534984443047&text=Olá%2C+gostaria+de+solicitar+o+orçamento+para+potencializar+meu+negócio.🚀">
         <button data-aos="fade-up"  className="btn-call">Agendar uma Reunião</button></a>
-        <div>
-          
-        </div>
+        <Redes></Redes>
         
       </section>
      

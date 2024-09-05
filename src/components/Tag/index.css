@@ -4,5 +4,8 @@
     border-radius: 2px;
     padding: 5px;
     font-weight: 800;
+    min-width: 100px;
+    max-width: 250px;
+    font-size: 1.2rem;
 
 }

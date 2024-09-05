@@ -1,0 +1,36 @@
+.list-social{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    transform: ease-in 3s;
+}
+
+.list-social svg {
+    width: 32px; /* Definindo largura uniforme */
+    height: 32px; /* Definindo altura uniforme */
+    padding: 5px;
+    transition: fill 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+}
+#git-icon:hover{
+    fill: rgb(153, 26, 192);
+    background-color: white;
+    border-radius: 5px;
+}
+#mail-icon:hover{
+    fill: red;
+    background-color: white;
+    border-radius: 5px;
+}
+#link-icon:hover{
+    fill: rgb(5, 116, 190);
+
+    background-color: white;
+    border-radius: 5px;
+}
+#wp-icon:hover{
+    border-radius: 5px;
+    background-color: rgb(63, 151, 52);
+}

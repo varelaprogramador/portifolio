@@ -33,6 +33,25 @@
 html{
 
     scroll-behavior: smooth;
+    /* width */
+::-webkit-scrollbar {
+  width: 5px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F5B81C; 
+  border-radius: 5px;
+}
+
+
   
   
 }
@@ -85,6 +104,11 @@ a{
 }
 .titulo-padrao{
   font-size: 3rem;
+}
+.titulo-call{
+  font-size: 1.8rem;
+  text-align: center;
+
 }
 .paragrafo{
   font-size: 1.2rem;
@@ -223,7 +247,7 @@ a{
   font-size: 1.4rem;
   border-radius: 5px;
 }
-.footer{
+footer{
   height: 50px;
   width: 100%;
   background-color: black;
