@@ -29,9 +29,6 @@
   to { border-right-color: transparent; }
 }
 
-.column-slide-right{
-  animation: slide-right 2s ease-in-out;
-}
 
 html{
 
@@ -63,6 +60,7 @@ a{
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  overflow: hidden;
 }
 
 .container-1{
@@ -72,6 +70,8 @@ a{
   justify-content: center;
   width: 100%;
   min-height: 80vh;
+  max-height: 100vh;
+  overflow: hidden;
   gap: 15px;
   text-align: center;
   margin-bottom: 50px;
@@ -81,13 +81,14 @@ a{
   white-space: nowrap;
   overflow: hidden; /* Esconde o texto que ainda não foi "digitado" */
   border-right: 3px solid; /* Cria o efeito do cursor */
-  animation: typing 4s steps(30) 1s 1 normal both, blinkCursor 500ms steps(30) infinite normal;
+  animation: typing 4s steps(50) 4s 1 normal both, blinkCursor 400ms steps(10) infinite normal;
 }
 .titulo-padrao{
   font-size: 3rem;
 }
 .paragrafo{
   font-size: 1.2rem;
+  font-weight: 500;
 }
 .enfase{
   color: #F5B81C;
@@ -172,10 +173,13 @@ a{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 30px;
+  justify-items: center;
+  padding: 15px;
 }
 .card-skills{
   max-width: 300px;
-  min-width: 250px;
+  width: 70%;
+  min-width: 150px;
   height: 250px;
   display: flex;
   justify-content: center;
@@ -186,6 +190,7 @@ a{
   border-radius: 5px;
   background-color: white;
   color: #181818;
+  justify-items: center;
   transition:transform 0.3s ease;
 }
 .card-skills:hover{
@@ -199,7 +204,35 @@ a{
   margin-top: 25px;
   width: 60%;
 }
-
+.container-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 50vh;
+  background-color: #F5B81C;
+  width: 100%;
+  gap: 30px;
+  color:black;
+}
+.btn-call{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.4rem;
+  border-radius: 5px;
+}
+.footer{
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 
 @media (max-width:1000px) {
@@ -209,6 +242,11 @@ a{
     grid-template-columns: repeat(3,1fr);
     gap:15px;
   
+  }
+  .grid-skills{
+    grid-template-columns: repeat(2,1fr);
+    
+    
   }
   
 }
@@ -246,6 +284,9 @@ a{
     grid-template-columns: repeat(2,1fr);
     gap:5px;
   
+  }
+  .grid-skills{
+    grid-template-columns: 1fr;
   }
   
   

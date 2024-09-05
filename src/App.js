@@ -7,12 +7,13 @@ import TagItem from "./components/Tag/TagItem";
 import TagData from "./Data/TagData";
 
 
+
 function App() {
   return (
     <main className="App">
       <section className="container-1">
         <h1 className="titulo-animado">Olá, seja Bem-vindo ao meu <span className="enfase">portifólio</span></h1>
-        <p>Criado por <a href="https://www.instagram.com/varela.dev/" className="enfase">@Ryan Varela</a></p>
+        <p>Criado por <a href="" className="enfase">@Ryan Varela</a></p>
         <a className="arrow" href="#container-2">
           <img src={arrow}></img></a>
       </section>
@@ -84,6 +85,18 @@ function App() {
 
 
       </section>
+      <section data-aos="fade" className="container-4">
+        <h2 data-aos="fade-up" className="titulo-padrao">Algo interessante em sua mente?<br></br>
+        Vamos falar sobre seu projeto!</h2>
+        <p data-aos="fade-up" className="paragrafo">Marque uma reunião no botão abaixo</p>
+        <a  href="https://api.whatsapp.com/send?phone=+5534984443047&text=Olá%2C+gostaria+de+solicitar+o+orçamento+para+potencializar+meu+negócio.🚀">
+        <button data-aos="fade-up"  className="btn-call">Agendar uma Reunião</button></a>
+        <div>
+          
+        </div>
+        
+      </section>
+     
 
     </main>
   );
