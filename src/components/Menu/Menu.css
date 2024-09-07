@@ -18,6 +18,60 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
+.vertical-bar {
+    min-width: 100px;
+    border: 1px solid white;
+    background-color: #ffffff;
+    position: fixed;
+    left: 15px;
+    top: 120px;
+    border-radius: 5px;
+    z-index: 999;
+    opacity: 0;  /* Inicialmente invisível */
+    transform: translateX(-50px);  /* Inicialmente deslocada à esquerda */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Transição para ambos */
+  
+}
+.vertical-bar nav{
+    display: flex;
+    flex-direction: column;
+    border: 5px;
+}
+.vertical-bar a{
+    color: black;
+}
+.vertical-bar nav a{
+    max-width: 105px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+   
+ 
+  
+}
+.vertical-bar nav a:hover{
+    background-color: #151515;
+    padding: 10px;
+    color: white;
+  
+}
+
+/* Classe para quando a barra estiver visível */
+.vertical-bar.show {
+    opacity: 1;  /* Visível */
+    transform: translateX(0);  /* Volta à posição normal */
+}
+@media (max-width:700px) {
+    .vertical-bar{
+     width: 90%; 
+     transform: translateY(-50px);  
+    }
+    .vertical-bar nav a{
+        max-width: 95%;
+        width: 100%;   
+       }
+}
+
 .logo {
     width: 110px;
     padding: 20px;

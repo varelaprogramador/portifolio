@@ -92,7 +92,7 @@ function App() {
 
 
       </section>
-      <section data-aos="fade" className="container-4">
+      <section id="contact" data-aos="fade" className="container-4">
         <h2 data-aos="fade-up" className="titulo-call">Algo interessante em sua mente?<br></br>
           Vamos falar sobre seu projeto!</h2>
         <p data-aos="fade-up" className="paragrafo">Marque uma reunião no botão abaixo</p>
