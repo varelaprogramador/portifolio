@@ -1,12 +1,13 @@
 
 import { ArrowRight, MoveRight } from "lucide-react";
-import arrow from "./assets/arrow.svg";
+import arrow from "../assets/arrow.svg";
 
-import fotoPerfil from "./assets/foto-main-Ryan.svg"
-import divisionImage from "./assets/division-RV.svg";
-import TagItem from "./components/Tag/TagItem";
-import TagData from "./Data/TagData";
-import Redes from "./components/redes-sociais/redes";
+import fotoPerfil from "../assets/foto-main-Ryan.svg"
+import divisionImage from "../assets/division-RV.svg";
+import TagItem from "../components/Tag/TagItem";
+import TagData from "../Data/TagData";
+import Redes from "../components/redes-sociais/redes";
+import { Link } from "react-router-dom";
 
 
 
@@ -41,9 +42,13 @@ function App() {
               )
             })}
           </div>
-          <button style={{ width: "200px" }} className="btn-amarelo">
-            Veja Mais Sobre Mim <ArrowRight size={15}></ArrowRight>
-          </button>
+          <div style={{display:"block"}}>
+          <Link to={"/sobre-mim"} style={{ display: "inline-block" }}>
+            <button style={{ width: "200px",padding:"10px" }} className="btn-amarelo">
+              Veja Mais Sobre Mim <ArrowRight size={15}></ArrowRight>
+            </button>
+            </Link>
+            </div>
         </div>
         <div className="container-column" data-aos="fade-left">
           <figure>
@@ -62,25 +67,25 @@ function App() {
         <h2 data-aos="fade-up" className="titulo-padrao"><span className="enfase">Skills</span> Principais</h2>
         <div data-aos="fade-up" className="grid-skills">
 
-          <article  className="card-skills">
+          <article className="card-skills">
             <h2>Front end</h2>
             <p>Desenvolvimento de sites responsivos e interativos utilizando
               tecnologias modernas, como o React e Next,
               juntamente com bibliotecas populares como Tailwind CSS e Styled Components.</p>
           </article>
-          <article  className="card-skills">
+          <article className="card-skills">
             <h2>UI Desginer</h2>
             <p>Desenvolvimento de sites prototipos de alta fidelidade via figma.
               Sou altamente adptavel para criação de prototipos UI nao sou dependente de nenhuma ferramenta.</p>
 
           </article>
-          <article  className="card-skills">
+          <article className="card-skills">
             <h2>Automações</h2>
             <p>Comecei a pouco tempo a estudar automações. Sou capaz de criar automações complexas (Ainda estou estudando)</p>
 
           </article >
         </div>
-        <div  className="legenda-skills">
+        <div className="legenda-skills">
           <p >Todas essas skills e experiencias me proporcionaram uma linha de raciocinio bastante singular
             ou seja tenho bastante ideias para <span className="enfase">potencialização de negóçios.</span> </p>
         </div>
@@ -89,14 +94,14 @@ function App() {
       </section>
       <section data-aos="fade" className="container-4">
         <h2 data-aos="fade-up" className="titulo-call">Algo interessante em sua mente?<br></br>
-        Vamos falar sobre seu projeto!</h2>
+          Vamos falar sobre seu projeto!</h2>
         <p data-aos="fade-up" className="paragrafo">Marque uma reunião no botão abaixo</p>
-        <a  href="https://api.whatsapp.com/send?phone=+5534984443047&text=Olá%2C+gostaria+de+solicitar+o+orçamento+para+potencializar+meu+negócio.🚀">
-        <button data-aos="fade-up"  className="btn-call">Agendar uma Reunião</button></a>
+        <a href="https://api.whatsapp.com/send?phone=+5534984443047&text=Olá%2C+gostaria+de+solicitar+o+orçamento+para+potencializar+meu+negócio.🚀">
+          <button data-aos="fade-up" className="btn-call">Agendar uma Reunião</button></a>
         <Redes></Redes>
-        
+
       </section>
-     
+
 
     </main>
   );

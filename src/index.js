@@ -5,7 +5,7 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Routes from './Routes';
 import Menu from './components/Menu/MenuManager';
 import { LoaderProvider, useLoader } from './components/Loader/LoaderProvider';
 import Loader from './components/Loader/Loader';
@@ -29,7 +29,7 @@ function MainApp() {
     <>
       {loading && <Loader />}
       <Menu />
-      <App />
+      <Routes />
       <Footer />
     </>
   );

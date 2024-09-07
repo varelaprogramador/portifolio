@@ -1,0 +1,44 @@
+.container-1-sobre{
+    padding-top: 50px;
+}
+.container-2-sobre{
+    width: 90%;
+    padding: 24px;
+}
+.container-3-sobre{
+    width: 90%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.container-skills-list{
+    width: 100%;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-skills-list div{
+    width: 90%;
+    transition: color 0.5s ease-in-out;
+}
+.container-skills-list div:hover{
+    color: #F5B81C;
+}
+.container-skills-list{
+    font-size: 1.8rem;
+}
+.area-tag-geral{
+    
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(5,100px);
+        gap:15px;
+      
+}
+.area-tag-geral a{
+    display: inline-block;
+}
